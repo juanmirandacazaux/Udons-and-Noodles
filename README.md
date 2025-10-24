@@ -16,16 +16,6 @@ CSS3 — responsive design and animations
 
 JavaScript (ES6) — interactivity and dynamic content
 
-(Optional) Google Fonts / Icons / Animations Library
-
-📂 Folder Structure
-marugame-site/
-│
-├── index.html        # Main HTML file
-├── css/
-│   └── style.css     # Stylesheet
-└── js/
-    └── script.js     # JavaScript logic
 
 🚀 Getting Started
 1. Clone this repository
