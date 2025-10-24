@@ -146,12 +146,7 @@
         aboutTitle: 'About Us',
         aboutText: 'Udon House began with a simple idea: handmade noodles, clean broths, and honest ingredients. We source local produce and prepare each bowl by hand.'
       },
-      jp: {
-        title: 'うどんハウス',
-        tagline: '手作りうどん • シンプルな丼 • 毎日提供',
-        aboutTitle: '私たちについて',
-        aboutText: 'うどんハウスは手作りうどん、澄んだ出汁、良い素材を大切にしています。地元の食材を使い、ひとつひとつ丁寧に仕上げます。'
-      }
+      
     };
     langSelect.addEventListener('change', (e)=> {
       const L = texts[e.target.value] || texts.en;
