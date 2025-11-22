@@ -47,6 +47,10 @@ header {
   background-color: #fff3e0;
 }
 
+.logoImage {
+    width: 15%;
+}
+
 nav a {
   margin: 0 10px;
   text-decoration: none;
