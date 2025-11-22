@@ -137,24 +137,7 @@
       window.scrollTo({top:document.getElementById('menu').offsetTop - 20, behavior:'smooth'});
     });
 
-    // Language toggle (example - switch text to Japanese-ish placeholders)
-    const langSelect = document.getElementById('langSelect');
-    const texts = {
-      en: {
-        title: 'Udon House',
-        tagline: 'Fresh noodles • simple bowls • served daily',
-        aboutTitle: 'About Us',
-        aboutText: 'Udon House began with a simple idea: handmade noodles, clean broths, and honest ingredients. We source local produce and prepare each bowl by hand.'
-      },
-      
-    };
-    langSelect.addEventListener('change', (e)=> {
-      const L = texts[e.target.value] || texts.en;
-      document.querySelector('.brand h1').textContent = L.title;
-      document.querySelector('.tag').textContent = L.tagline;
-      document.querySelector('#about h3')?.textContent = L.aboutTitle;
-      document.querySelector('#about p')?.textContent = L.aboutText;
-    });
+    
 
     // small misc
     yearSpan.textContent = new Date().getFullYear();
