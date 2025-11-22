@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Udon House — Fresh Noodles & Bowls</title>
-  <meta name="description" content="Udon House — Fresh noodles, simple menu, serve & enjoy. Example site created with HTML, CSS and JavaScript." />
-  <!-- Link CSS file -->
+  <meta name="description" content="Udon House — Fresh noodles, simple menu, serve & enjoy. Example site created with HTML, CSS and JavaScript.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,8 +13,7 @@
   <div class="container">
     <header>
       <div class="brand">
-        
-        <img class="logoImage" src="assets/idOD-6HJVJ_logos.png" alt="">
+        <img class="logoImage" src="assets/idOD-6HJVJ_logos.png" alt="Udon House Logo">
         <div>
           <h1>Udon House</h1>
           <div class="tag">Fresh noodles • simple bowls • served daily</div>
@@ -25,11 +24,11 @@
         <div class="nav-links" aria-label="Main navigation">
           <a href="#menu">Menu</a>
           <a href="#about">About</a>
+          <a href="product-page.html">Products</a>
           <a href="#locations">Locations</a>
           <a href="#contact">Contact</a>
           <button class="cta" id="orderNowBtn">Order Now</button>
         </div>
-       
       </nav>
     </header>
 
@@ -37,14 +36,25 @@
     <section class="hero" aria-labelledby="heroTitle">
       <div class="hero-left">
         <h2 id="heroTitle">Warm bowls, simple ingredients — freshly made udon</h2>
-        <p>Handmade udon noodles, clear broths, and seasonal toppings. Fast service, quiet space, and classic flavors.</p>
+        <p>Handmade udon noodles, clear broths, and seasonal toppings. Fast service, quiet space, and classic flavors. Experience the authentic taste of Japan with our traditional recipes and modern twist.</p>
         <div class="hero-cta">
-          <button class="btn btn-primary" id="orderHero">Order a Bowl</button>
-          <button class="btn btn-ghost" id="viewMenu">View Menu</button>
+          <button class="btn btn-primary" id="orderHero">
+            <i class="fas fa-utensils"></i> Order a Bowl
+          </button>
+          <button class="btn btn-ghost" id="viewMenu">
+            <i class="fas fa-book-open"></i> View Menu
+          </button>
         </div>
-        <div style="margin-top:16px; display:flex; gap:12px; align-items:center;">
-          <div class="chip">No.1 Seller: Classic Udon</div>
-          <div class="chip">Open: 11:00 – 21:00</div>
+        <div style="margin-top:20px; display:flex; gap:12px; align-items:center; flex-wrap: wrap;">
+          <div class="chip">
+            <i class="fas fa-crown"></i> No.1 Seller: Classic Udon
+          </div>
+          <div class="chip">
+            <i class="fas fa-clock"></i> Open: 11:00 – 21:00
+          </div>
+          <div class="chip">
+            <i class="fas fa-leaf"></i> Vegetarian Options
+          </div>
         </div>
       </div>
 
@@ -70,12 +80,12 @@
     <!-- Search + Filters -->
     <section>
       <div class="section-head">
-        <h3 id="menu">Menu</h3>
-        <div style="display:flex;align-items:center;gap:12px">
+        <h3 id="menu">Our Menu</h3>
+        <div class="search-filter">
           <input type="search" id="search" placeholder="Search dishes or ingredients..." aria-label="Search menu">
           <select id="filter" aria-label="Filter by category">
-            <option value="all">All</option>
-            <option value="udon">Udon</option>
+            <option value="all">All Categories</option>
+            <option value="udon">Udon Bowls</option>
             <option value="tempura">Tempura</option>
             <option value="sides">Sides</option>
           </select>
@@ -93,31 +103,92 @@
         <h3>About Us</h3>
         <div class="muted">Traditional technique, modern taste</div>
       </div>
-      <p class="muted">Udon House began with a simple idea: handmade noodles, clean broths, and honest ingredients. We source local produce and prepare each bowl by hand. Visit us for a quick lunch or a relaxed dinner.</p>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p class="muted mb-20">Udon House began with a simple idea: handmade noodles, clean broths, and honest ingredients. We source local produce and prepare each bowl by hand. Visit us for a quick lunch or a relaxed dinner.</p>
+          <p class="muted">Our chefs have trained in traditional Japanese techniques, bringing authentic flavors to every bowl. We believe in the power of simple, high-quality ingredients to create memorable dining experiences.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1000&auto=format&fit=crop" alt="Udon House interior">
+        </div>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h4>Fresh Ingredients</h4>
+          <p>We source the freshest local ingredients and import authentic Japanese staples for true flavor.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-hand-sparkles"></i>
+          </div>
+          <h4>Handmade Daily</h4>
+          <p>Our noodles are made fresh every morning using traditional techniques passed down through generations.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h4>Made with Care</h4>
+          <p>Every bowl is prepared with attention to detail and served with genuine hospitality.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Locations -->
     <section id="locations">
       <div class="section-head">
-        <h3>Locations</h3>
+        <h3>Our Locations</h3>
         <div class="muted">Find us in the city center</div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:12px">
-        <div style="background:var(--card);padding:12px;border-radius:12px;display:flex;justify-content:space-between;align-items:center">
+      <div class="locations-grid">
+        <div class="location-card">
           <div>
             <strong>Udon House — Main Branch</strong>
             <div class="muted">123 Noodle St, Downtown</div>
+            <div class="light-muted" style="margin-top: 8px;">
+              <i class="fas fa-phone"></i> (555) 123-4567
+            </div>
           </div>
           <div style="text-align:right">
             <div class="muted">Open: 11:00 — 21:00</div>
-            <button class="btn btn-ghost" onclick="alert('Open in Maps (example)')">View on map</button>
+            <button class="btn btn-ghost" onclick="alert('Open in Maps (example)')">
+              <i class="fas fa-map-marker-alt"></i> View on map
+            </button>
+          </div>
+        </div>
+        
+        <div class="location-card">
+          <div>
+            <strong>Udon House — Westside</strong>
+            <div class="muted">456 Ramen Ave, West District</div>
+            <div class="light-muted" style="margin-top: 8px;">
+              <i class="fas fa-phone"></i> (555) 987-6543
+            </div>
+          </div>
+          <div style="text-align:right">
+            <div class="muted">Open: 11:00 — 21:00</div>
+            <button class="btn btn-ghost" onclick="alert('Open in Maps (example)')">
+              <i class="fas fa-map-marker-alt"></i> View on map
+            </button>
           </div>
         </div>
       </div>
     </section>
 
     <footer id="contact">
-      <div style="display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap">
+      <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; margin-bottom: 16px;">
+        <a href="#" class="muted"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="muted"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="muted"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap;">
         <div class="muted">© <span id="year"></span> Udon House</div>
         <a href="mailto:hello@udonhouse.example" class="muted">hello@udonhouse.example</a>
       </div>
@@ -131,7 +202,7 @@
         <img id="modalImg" src="" alt="">
       </div>
       <div>
-        <div style="display:flex;justify-content:space-between;align-items:start;">
+        <div style="display:flex; justify-content:space-between; align-items:start;">
           <div>
             <h3 id="modalTitle">Title</h3>
             <div class="muted" id="modalCategory">Category</div>
@@ -139,19 +210,19 @@
           <button class="close-btn" id="closeModal" aria-label="Close">&times;</button>
         </div>
         <p id="modalDesc" class="muted" style="margin-top:12px">Description</p>
-        <div style="margin-top:18px;display:flex;gap:12px;align-items:center;">
-          <div style="font-size:20px;font-weight:800" id="modalPrice">$10</div>
-          <div style="margin-left:auto;display:flex;gap:8px;">
-            <input id="qty" type="number" min="1" value="1" style="width:72px;padding:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
-            <button class="btn btn-primary" id="addCart">Add to cart</button>
+        <div style="margin-top:18px; display:flex; gap:12px; align-items:center;">
+          <div style="font-size:20px; font-weight:800" id="modalPrice">$10</div>
+          <div style="margin-left:auto; display:flex; gap:8px;">
+            <input id="qty" type="number" min="1" value="1" style="width:72px; padding:8px; border-radius:8px; border:1px solid rgba(0,0,0,0.06)">
+            <button class="btn btn-primary" id="addCart">
+              <i class="fas fa-shopping-cart"></i> Add to cart
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-<!-- Link JavaScript file -->
   <script src="script.js"></script>
-
 </body>
 </html>

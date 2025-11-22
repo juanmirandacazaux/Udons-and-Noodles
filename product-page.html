@@ -3,46 +3,454 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Udon House</title>
+  <title>Full Menu | Udon House</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product-style.css">
 </head>
 <body>
-  <header>
-    <h1>Our Menu</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img class="logoImage" src="assets/idOD-6HJVJ_logos.png" alt="Udon House Logo">
+        <div>
+          <h1>Udon House</h1>
+          <div class="tag">Fresh noodles • simple bowls • served daily</div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="#udon">Udon Bowls</a>
+          <a href="#tempura">Tempura</a>
+          <a href="#sides">Sides</a>
+          <button class="cta" onclick="location.href='index.html#menu'">Order Now</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero">
+      <div class="product-hero-left">
+        <h2>Our Complete Menu</h2>
+        <p>Explore our full selection of authentic Japanese udon bowls, crispy tempura, and refreshing sides. Every dish is crafted with traditional techniques and the freshest ingredients.</p>
+        <div class="product-hero-cta">
+          <button class="btn btn-primary" onclick="location.href='index.html#menu'">
+            <i class="fas fa-utensils"></i> Order Online
+          </button>
+          <button class="btn btn-ghost" onclick="window.print()">
+            <i class="fas fa-print"></i> Print Menu
+          </button>
+        </div>
+        <div style="margin-top:20px; display:flex; gap:12px; align-items:center; flex-wrap: wrap;">
+          <div class="chip">
+            <i class="fas fa-star"></i> 4.8 Rating (250+ Reviews)
+          </div>
+          <div class="chip">
+            <i class="fas fa-truck"></i> Free Delivery Over $25
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="featured-card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500&auto=format&fit=crop" alt="Featured Udon">
+          <div class="featured-info">
+            <h4>Chef's Recommendation</h4>
+            <p class="muted">Try our signature Classic Udon bowl</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+      <a href="#udon" class="active"><i class="fas fa-bowl-food"></i> Udon Bowls</a>
+      <a href="#tempura"><i class="fas fa-shrimp"></i> Tempura</a>
+      <a href="#sides"><i class="fas fa-leaf"></i> Sides & Salads</a>
+      <a href="#beverages"><i class="fas fa-glass-water"></i> Beverages</a>
+      <a href="#combos"><i class="fas fa-gift"></i> Meal Combos</a>
     </nav>
-  </header>
 
-  <section class="menu-gallery">
-    <div class="menu-item">
-      <img src="" alt="Classic Udon">
-      <h3>Classic Udon</h3>
-      <p>Fresh noodles in light soy broth with green onions.</p>
+    <!-- Search & Filter Section -->
+    <section>
+      <div class="section-head">
+        <h3>All Menu Items</h3>
+        <div class="search-filter">
+          <input type="search" placeholder="Search menu items..." style="width: 300px;">
+          <select>
+            <option>All Categories</option>
+            <option>Udon Bowls</option>
+            <option>Tempura</option>
+            <option>Sides</option>
+          </select>
+          <select>
+            <option>Sort by: Popular</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Name: A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="price-filter">
+        <label>Price Range:</label>
+        <div class="price-range">
+          <input type="number" placeholder="Min" value="0">
+          <span>-</span>
+          <input type="number" placeholder="Max" value="50">
+          <button class="btn btn-ghost">Apply</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Udon Bowls Section -->
+    <section id="udon">
+      <div class="section-header">
+        <i class="fas fa-bowl-food"></i>
+        <h3>Udon Bowls</h3>
+        <div class="muted">8 items</div>
+      </div>
+      
+      <div class="product-menu-grid">
+        <article class="product-menu-item featured">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500&auto=format&fit=crop" alt="Classic Udon">
+          <div class="product-item-body">
+            <span class="category-tag">Signature</span>
+            <h4>Classic Udon</h4>
+            <p>Thick udon noodles in clear dashi broth with scallions and tempura bits. Our signature dish that started it all.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 450 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 12 min</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon" title="Vegetarian"><i class="fas fa-leaf"></i></span>
+            </div>
+            <div class="product-price">$8.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+
+        <article class="product-menu-item">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1604908177522-2b7b0da0a5df?q=80&w=500&auto=format&fit=crop" alt="Beef Udon">
+          <div class="product-item-body">
+            <span class="category-tag">Popular</span>
+            <h4>Beef Udon</h4>
+            <p>Slow-cooked beef slices in savory broth with tender noodles and vegetables. Rich flavor that satisfies.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 520 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 15 min</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon non-veg" title="Contains meat"><i class="fas fa-drumstick-bite"></i></span>
+            </div>
+            <div class="product-price">$12.00</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+
+        <article class="product-menu-item">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1597300329355-5d5d4f3b8f2b?q=80&w=500&auto=format&fit=crop" alt="Spicy Miso Udon">
+          <div class="product-item-body">
+            <span class="category-tag">Spicy</span>
+            <h4>Spicy Miso Udon</h4>
+            <p>Rich miso broth with a spicy kick, perfect for those who love bold flavors. Topped with chili oil and garlic.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 480 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 10 min</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon" title="Vegetarian"><i class="fas fa-leaf"></i></span>
+              <span class="dietary-icon spicy" title="Spicy"><i class="fas fa-pepper-hot"></i></span>
+            </div>
+            <div class="product-price">$9.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+
+        <article class="product-menu-item">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=500&auto=format&fit=crop" alt="Vegetable Udon">
+          <div class="product-item-body">
+            <span class="category-tag">Vegetarian</span>
+            <h4>Vegetable Udon</h4>
+            <p>Seasonal vegetables in light broth - a perfect vegetarian option. Fresh, healthy, and delicious.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 380 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 8 min</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon" title="Vegetarian"><i class="fas fa-leaf"></i></span>
+            </div>
+            <div class="product-price">$7.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tempura Section -->
+    <section id="tempura">
+      <div class="section-header">
+        <i class="fas fa-shrimp"></i>
+        <h3>Tempura</h3>
+        <div class="muted">5 items</div>
+      </div>
+      
+      <div class="product-menu-grid">
+        <article class="product-menu-item">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1604908177748-9a0ca3ae2a72?q=80&w=500&auto=format&fit=crop" alt="Tempura Shrimp">
+          <div class="product-item-body">
+            <span class="category-tag">Popular</span>
+            <h4>Tempura Shrimp</h4>
+            <p>Light and crispy tempura prawns with special dipping sauce. Perfect as a side or addition to any udon bowl.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 320 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 8 min</span>
+            </div>
+            <div class="product-price">$6.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+
+        <article class="product-menu-item">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=500&auto=format&fit=crop" alt="Vegetable Tempura">
+          <div class="product-item-body">
+            <span class="category-tag">Vegetarian</span>
+            <h4>Vegetable Tempura</h4>
+            <p>Assorted seasonal vegetables lightly fried to perfection. A colorful and delicious vegetarian option.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 280 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 6 min</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon" title="Vegetarian"><i class="fas fa-leaf"></i></span>
+            </div>
+            <div class="product-price">$5.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sides Section -->
+    <section id="sides">
+      <div class="section-header">
+        <i class="fas fa-leaf"></i>
+        <h3>Sides & Appetizers</h3>
+        <div class="muted">6 items</div>
+      </div>
+      
+      <div class="product-menu-grid">
+        <article class="product-menu-item">
+          <img class="product-menu-thumb" src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?q=80&w=500&auto=format&fit=crop" alt="Cucumber Sunomono">
+          <div class="product-item-body">
+            <span class="category-tag">Refreshing</span>
+            <h4>Cucumber Sunomono</h4>
+            <p>Refreshing pickled cucumber salad with sesame seeds. A perfect palate cleanser between bites.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 45 cal</span>
+              <span class="nutrition-tag"><i class="fas fa-clock"></i> 2 min</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon" title="Vegetarian"><i class="fas fa-leaf"></i></span>
+            </div>
+            <div class="product-price">$3.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-ghost">
+              <i class="fas fa-eye"></i> Quick View
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add to Order
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section id="beverages">
+      <div class="section-header">
+        <i class="fas fa-glass-water"></i>
+        <h3>Beverages</h3>
+        <div class="muted">8 items</div>
+      </div>
+      
+      <div class="product-menu-grid">
+        <article class="product-menu-item">
+          <div class="product-item-body">
+            <span class="category-tag">Traditional</span>
+            <h4>Green Tea</h4>
+            <p>Hot or iced Japanese green tea. Refreshing and authentic.</p>
+            <div class="nutrition-info">
+              <span class="nutrition-tag"><i class="fas fa-fire"></i> 5 cal</span>
+            </div>
+            <div class="dietary-icons">
+              <span class="dietary-icon" title="Vegetarian"><i class="fas fa-leaf"></i></span>
+            </div>
+            <div class="product-price">$2.50</div>
+          </div>
+          <div class="product-item-actions">
+            <button class="btn btn-primary">
+              <i class="fas fa-shopping-cart"></i> Add
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; margin-bottom: 16px;">
+        <a href="#" class="muted"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="muted"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="muted"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap;">
+        <div class="muted">© <span id="year"></span> Udon House</div>
+        <a href="mailto:hello@udonhouse.example" class="muted">hello@udonhouse.example</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="quick-view-modal">
+    <div class="quick-view-content">
+      <button class="quick-view-close">&times;</button>
+      <h3>Product Details</h3>
+      <!-- Modal content would be populated dynamically -->
     </div>
+  </div>
 
-    <div class="menu-item">
-      <img src="" alt="Tempura Udon">
-      <h3>Tempura Udon</h3>
-      <p>Handmade noodles served with crispy shrimp tempura.</p>
-    </div>
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Category navigation
+    document.querySelectorAll('.category-nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.category-nav a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+        
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
 
-    <div class="menu-item">
-      <img src="" alt="Beef Donburi">
-      <h3>Beef Donburi</h3>
-      <p>Rice bowl with marinated beef and caramelized onions.</p>
-    </div>
+    // Quick view functionality
+    document.querySelectorAll('.btn-ghost').forEach(button => {
+      if (button.textContent.includes('Quick View')) {
+        button.addEventListener('click', function() {
+          document.querySelector('.quick-view-modal').classList.add('active');
+        });
+      }
+    });
 
-    <div class="menu-item">
-      <img src="" alt="Spicy Udon">
-      <h3>Spicy Udon</h3>
-      <p>Rich broth with chili oil and garlic for a bold flavor.</p>
-    </div>
-  </section>
+    // Close quick view
+    document.querySelector('.quick-view-close').addEventListener('click', function() {
+      document.querySelector('.quick-view-modal').classList.remove('active');
+    });
 
-  <footer>
-    <p>© 2025 Udon House. All rights reserved.</p>
-  </footer>
+    // Close modal when clicking outside
+    document.querySelector('.quick-view-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.classList.remove('active');
+      }
+    });
+
+    // Simple add to cart functionality
+    document.querySelectorAll('.btn-primary').forEach(button => {
+      if (!button.textContent.includes('Order Online')) {
+        button.addEventListener('click', function() {
+          const menuItem = this.closest('.product-menu-item');
+          const itemName = menuItem.querySelector('h4').textContent;
+          const itemPrice = menuItem.querySelector('.product-price').textContent;
+          
+          // Create a nice notification
+          const notification = document.createElement('div');
+          notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+          `;
+          notification.innerHTML = `
+            <i class="fas fa-check-circle"></i> ${itemName} added to cart! ${itemPrice}
+          `;
+          document.body.appendChild(notification);
+          
+          setTimeout(() => {
+            notification.style.animation = 'slideOut 0.3s ease';
+            setTimeout(() => notification.remove(), 300);
+          }, 3000);
+        });
+      }
+    });
+
+    // Add CSS for animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
 </body>
 </html>
