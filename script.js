@@ -13,7 +13,7 @@ const menuData = [
     title: 'Beef Udon', 
     category: 'udon', 
     price: 12.0, 
-    img: 'https://images.unsplash.com/photo-1604908177522-2b7b0da0a5df?q=80&w=1400&auto=format&fit=crop&crop=entropy', 
+    img: 'assets/jinomono-media-5DsTEP06774-unsplash.jpg', 
     desc: 'Slow cooked beef slices with a savory broth. Tender beef that melts in your mouth.' 
   },
   { 
@@ -21,7 +21,7 @@ const menuData = [
     title: 'Tempura Shrimp', 
     category: 'tempura', 
     price: 6.5, 
-    img: 'https://images.unsplash.com/photo-1604908177748-9a0ca3ae2a72?q=80&w=1400&auto=format&fit=crop&crop=entropy', 
+    img: 'assets/winston-chen--F53y5bjk6Y-unsplash.jpg', 
     desc: 'Light and crispy tempura prawns. Perfect as a side or addition to any udon bowl.' 
   },
   { 
@@ -37,7 +37,7 @@ const menuData = [
     title: 'Spicy Miso Udon', 
     category: 'udon', 
     price: 9.5, 
-    img: 'https://images.unsplash.com/photo-1597300329355-5d5d4f3b8f2b?q=80&w=1400&auto=format&fit=crop&crop=entropy', 
+    img: 'assets/iniizah-pHat91jV6ZQ-unsplash.jpg', 
     desc: 'Miso flavored broth with spicy kick. For those who enjoy a little heat in their meal.' 
   },
   { 
